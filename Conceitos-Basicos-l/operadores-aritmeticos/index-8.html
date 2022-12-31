@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-8</title>
+</head>
+<body>
+  <h1>Operadores Aritméticos</h1>
+  
+  <script>
+
+    //Operadore aritméticos
+    /*
+    + adição
+    - subtração
+    * multiplicação
+    / divisão
+
+    //Operadores aritméticos abreviados
+    +=
+    -=
+    *=
+    /=
+
+    */
+    
+    //qualuer valor dividido por zero dá infinito
+    console.log(7 / 0); //Infinity
+    
+    //nesta expressão o proprio javaScript pega o texto "42", 
+    //faz a conversão parseInt("42"). De texto para numero real.
+    //depois faz a divisão (42 / 2) resultado é 21
+    console.log("42" / 2);
+    
+    //O javascript identifica que não é um numero e da o retorno NAN
+    //que significa NAN (Not a Number) não é um numero.
+    console.log("woto" * 3);
+    
+    //resultado 0.7999999999999999
+    console.log((0.1) + (0.7));
+
+    //ele continua com o mesmo valor =>  0.7999999999999999
+    var soma1 = 0.1;
+    var soma2 = 0.7;
+    var result = soma1 + soma2;
+    console.log("O resultado da soma é: " + result);
+
+    //colocar o valor por quanto de casas decimais você queira apresentar.
+    //seria proximo de arredondar o valor, usando o toFixed(e passando o valor 3 ou 2)
+    //agora sim chegamos no arredondamento com o toFixed(2);
+    //olha o resultado => 0.80
+    console.log(result.toFixed(2));
+
+    //agora vamos pegar o valor de (PI - completo) em Javascript "bom demais"
+    console.log("O valor de PI-completo: " + Math.PI);
+
+    //agora vamos pegar o valor de (PI - com as casas decimais - arredondamento)
+    console.log("O valor de PI-Com-3-casas-decimais: " + Math.PI.toFixed(3));
+
+    //fazendo (3 elevado ao quadrado 2) 
+    console.log("3 elevado ao quadrado e: " + Math.pow(3, 2));
+
+    //buscando a raiz quadrada de 81
+    console.log("Calculando a raiz quadrada de 81: " + Math.sqrt(81));
+
+    //saber o tipo de dados do valor 42;
+    console.log("Mostrando o tipo de dado em js: " + typeof(0,50));
+
+    //aqui temos um return booleano
+    //este valor é um inteiro
+    console.log("Este valor é um valor inteiro: " + Number.isInteger(2));
+    console.log("Este valor é um valor inteiro: " + Number.isInteger("woto-informatica"));
+
+    //verificando o valor em (binário)
+    console.log("===================binário=======================")
+    var valor = 10;
+    console.log("Quanto é o valor 9 emm binario: " + valor.toString(2));
+
+    //passando numero real para string
+    var num = 50;
+    console.log(num.toString());
+  </script>
+</body>
+</html>

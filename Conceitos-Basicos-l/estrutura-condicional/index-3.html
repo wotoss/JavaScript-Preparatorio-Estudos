@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estagio(Treinamento)-04 - Aula 03</title>
+</head>
+<body>
+  <h1>Treinamento 04 </h1>
+
+  <script>
+    //vamos trabalhar com lógica, com estruturas condicionais.
+    //colocando o valor de forma statica
+    //var tamanho = 18;
+    //colocando o valor de forma dinamica digitada pelo usuário.
+    var idade = 18;
+    //var idade = prompt("Digite o valor: ");
+    if(idade >= 18){ //expressão boleana retorna verdeiro ou false
+      console.log("Ele á maior de idade: ");
+    }else{
+      console.log("Ele é menor de idade, tem apenas: " + idade);
+    }
+    if (idade <= 14){
+      console.log("Criança");
+    }else if(idade > 14 && idade < 18){
+      console.log("Adolescente!");
+    }else{
+      console.log("Adulto!");
+    }
+
+    //Dica=> verificando conteudo
+    if (1 == "1"){
+      console.log('Sim, 1 == "1"');
+    }else{
+      console.log("Não");
+    }
+
+    //Dica => (verificar o conteudo e o tipo)
+    if (1 === "1"){
+      console.log('Sim, 1 === "1"');
+    }else{
+      console.log("Não!");
+    } 
+
+    //usando switch
+    //var sexo = 'm';
+    var sexo = prompt("Digite: ");
+    var sexo1 = sexo;
+    switch(sexo1){
+      case 'm':
+        console.log("Masculino");
+        break;
+      case 'f':
+        console.log("Feminino");
+        break;
+       default:
+        consolel.log("Desconhecido/Intersexo");
+        break;
+    }
+  </script>
+  
+</body>
+</html>

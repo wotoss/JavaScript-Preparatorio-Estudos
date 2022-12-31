@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seção-04</title>
+    <meta charset="utf-8"> 
+  </head>
+  <body>
+    <h1>Woto-Inoformática</h1>
+
+    <!--dentro do meu (body ou corpo)-->
+    <script>
+      //1º Meu escript esta inline.
+      //2º aspas duplas ("" ou '') indicam texto.
+      // ("" ou '') é uma definição de string
+      //3º ponto e virgula no (;) indicam o fim de uma expressão.
+      var nome1 = "woto"; 
+      var nome2 = 'livia';
+
+      //caso eu queira eu posso setar ou atualizar este valor 
+      //nome1 = "curso";
+      
+      //fiz uma conversão de uma string para receber um int 
+      nome2 = parseInt(42);
+      //Lembrando que eu só consigo fazer um calculo com este numero em inteiro feito o parse
+      //Este numero em string eu não consigo ("42" string)
+
+      var nome = 'woto-inoformática'; //string
+      var idade = 18; //int 
+      var altura = 1.72;//float (foat é com (.) e não com virugula (,))
+      var ativo = true; //booleano => (seria verdadeiro(true) ou falso(false) )
+      var alunos = ["Djavan", "Dnorá", "Daniel"]; //(vetor) ou (array) => são indexados iniciando 
+      //na posição [0: "Djavan", 1: "Dnorá", 2: "Camila"]
+      //temos um (vetor ou um array) com três elementos.
+      //Observarção importante sobre o array=> Nós passamos o conteudo e o array nos devolve
+      //a posição [(index ou indice) e o tamanho length]
+      //para acessar-mos o array podemos acessar pela
+      //(posição ou index) exemplo console.log[1] => neste contexto acessaremos Dnorá
+
+      //acessando o array de alunos
+      console.log("Acessando a posição [1] do array: " + alunos[1]);
+
+      //(montando ou construindo) objeto aluno.
+      var empregado = {
+        nome: 'Orleans',
+        idade: 22,
+        peso: 60.3,
+        ativo: true //objeto.
+      };
+      //acessando o objeto através do (.)
+      console.log("Acessando objeto e suas propriedade:" + empregado.nome); //ex: acessando a (propriedade: nome do objeto empregado); 
+      console.log("Acessando objeto e suas propriedade: " + empregado.idade); //ex: acessando a (propriedade: idade do objeto empregado);
+
+      //posso mostrar de duas formas 
+      //1º no log do console; 
+      //2º no proprio console;
+      //3º tambem posso mostrar pelo alert;
+      console.log(nome);
+      alert("Nome da empresa: " + nome);
+
+    </script>
+  </body>
+</html>
+
+<!--
+ * Falamos de Variaveis. Somente =>  var
+ * Tipos => float, int, string e conversõe parseInt(passando string para inteiro);
+ * Trabalhamos com (vetor ou array) e objetos {}. 
+ "e tambem como acessa-los tanto objetos como arrays".
+-->

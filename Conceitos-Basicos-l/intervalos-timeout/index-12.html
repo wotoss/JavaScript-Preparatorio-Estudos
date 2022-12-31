@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-12</title>
+</head>
+<body>
+  <h1>Intervalos e Timeout</h1>
+
+
+  <script>
+     //Intervalo e Timeout
+     function escrever(){
+      console.log('woto-informática');
+     }
+     //setInterval
+     //este 1000 representa a 1 segundo.
+     //veja que ao usar o setInterval eu não uso chamo a função escrever()
+     //eu escrevo o nome da função escrever e passo os segundos 1000 equivale a 1 segundo
+     //5000 equivale a 5 segundos.
+     setInterval(escrever, 1000);
+
+     //Timeout (tempo esgotado)
+     //a pagina vai carregar e dai a 3 segundo a função será carregada
+     //isto é um delei ou seja um atraso (setTimeout ele 
+     //carrega a pagina e depois do tempo determinado ele execulta a função)
+     setTimeout(escrever, 3000);
+  </script>
+</body>
+</html>

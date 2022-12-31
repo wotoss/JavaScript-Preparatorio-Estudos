@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-06</title>
+</head>
+<body>
+  <h1>Operadores Lógicos</h1>
+   <h2 style="color: green;">woto-informática</h2>
+
+  <script>
+     //Operadores Lógicos
+     //&& duplo (e comercial) significa o AND em SQL
+     var curso = 'JavaScript';
+     var legal = true;
+
+     //AND (e => ambas as expressões devem ser verdadeiras)
+     //nesta verificação as duas expressões tem que ser verdadeiras.
+     //para entrar no 1º (if) (tanto a 1º expressão, quando a 2º expressão devem ser true verdadeiras).
+     //se umas das expressões for falsa, entrará no segundo (if).
+     //Detalhe para aula
+     //o retorno do if é um valor booleano (true ou false) 
+     //pegando somente a expressão eu consigo fazer o teste para aula
+     //(curso === 'JavaScript' && legal === true) => que me devolve true;
+    
+     
+     if (curso === 'JavaScript' && legal === true){
+        console.log('O curso de JavaScript é legal');
+     }else{
+      console.log('O curso não é de JavaScript ou não é legal....');
+     }
+
+     console.log('===============Or ou ==========================');
+     // Já no Or (significa (ou) => pelo menos uma expressão deve ser verdadeira).
+     // "Há se acaso as duas forem verdadeiras tudo bem..."
+     // note que temos duas expressões 1º curso === 'JavaScript' e a 2º legal === true
+     // já no meio temos o (paipe || "apertamos o shift e a tecla onde esta a barra")
+     // para ajudar o aluno tenha uma imagem com o teclado.
+     
+     if(curso === 'JavaScript' || legal === true){
+      console.log("O curso de JavaScript é legal, uma das expressões devem ser true.");
+     }else{
+      console.log('O curso não é de JavaScript ou não é legal.');
+     }
+
+     console.log("==================Not ou não========================");
+     //quando queremos fazer uma operação
+     debugger
+     if (curso != 'JavaScript')
+     console.log('O curso não é JavaScript');
+     else
+     console.log('O curso é de JavaScript');
+
+  </script>
+</body>
+</html>

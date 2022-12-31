@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-05</title>
+</head>
+<body>
+  <h1>Estrutura de Repetição</h1>
+
+  <script>
+     //montando estrutura de repetição
+     //for é dividido em três partes.
+     //1º parte (let i = 0;) a declaração da variavel de controle.
+     //2º parte (i <= 10;) é a condição de parada.
+     //3º parte (i++) valor do incremento ou decremento, que seria incremento +1
+     //Resumo:
+     //acontecerá um loop, onde o valor de i inicia em 0 e o loop acontecerá
+     //enquanto o valor de i for (igual ou menor que 10).
+
+     /* Temos o for aqui funcionando..
+     debugger
+     for (let i = 0; i <= 10; i++) {
+      debugger
+       console.log("O valor é: " + i);
+*/
+       //Estrutura while
+       //1º eu declaro a variavel. Porque o while ele primeiro (verifica ou cheka)
+       //"se (numero) é (menor) que 10".
+       //passo a passo (step a step). 
+       //Ele olha o valor numero sendo menor que 10 ele faz o (loop) e imprimi 
+       //na tela.
+       
+       //var numero = 0;
+       var numero = 20;
+       while(numero <= 10){
+        console.log("imprimir valor loop while: " + numero);
+        numero++;
+        //fiz um while encadeado 
+        //lembrando ele 1º cheka imprimi o valor chekado
+        //depois ele (decrementa ou incrementa).
+       } while(numero > 10){
+        console.log(`quero que numero decremente 1 ${numero}`);
+        numero--;
+       }      
+     //}
+
+     //Estrutura  do-while
+     //do (faça) ou seja (imprima execulte) este valor (sem verificação).
+     //no (cont++) ele incrementa um valor.
+     //por fim no (while) ele verifica a consição (para continuar no loop ou não)
+     //a condição seria enquanto (cont for menor igual a 5 ele continua o loop) 
+     debugger
+     var cont = 0;
+     do{ //primeiro ele execulta, depois ele cheka (no controle while)
+       console.log('imprima o valor de cont: ' + cont);
+       cont++;
+     }while(cont <= 5); //lembrandp que a (condição é o controle) do (loop)
+
+  </script>
+</body>
+</html>

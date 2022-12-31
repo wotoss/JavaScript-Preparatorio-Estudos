@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-10</title>
+</head>
+<body>
+  <h1>Operador unário e ternário</h1>
+
+<script>
+  //quando fazemos uma operação com uma variavel somente.
+  //chamamos esta operação de unário
+  var idade = 25;
+  idade++; //operação unária
+  console.log("Operação unária, tem apenas uma variavel no processamento: " + idade);
+
+  //operador ternário de forma statica e dinâmica
+  var sexo = "";
+  var sexo = prompt('Digite (m) masculino ' + sexo);
+/*
+  if (sexo === 'm'){
+     console.log('masculino');
+  }
+  if(sexo === 'f'){
+     console.log('feminino');
+  }else{
+    alert("Temos neste momento intersexo");
+  }*/
+
+  //Operador ternário
+  //Ele vai mostrar a operação que retornar o booleano (true)
+  //o que  for false ele passa para outra expressão
+  // 1º expressão => sexo === 'm'
+  // 2º expressão => sexo === 'f'
+  // 3º se a expressão 1º e 2º for false ele mostrará o result da Intersexo.
+  debugger
+  console.log(sexo === 'm' ? 'Masculino' : sexo === 'f' ? 'feminino' : 'Intersexo!');
+
+  //Ternario tradicional um pouco mais simples
+  //console.log(sexo === 'm' ? 'Masculino' : 'Feminino');
+
+  </script>
+</body>
+</html>

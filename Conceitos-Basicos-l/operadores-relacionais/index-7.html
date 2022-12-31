@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-07</title>
+</head>
+<body>
+  <h1>Operadores Relacionais</h1>
+
+  <script>
+    //Operadores Relacionais
+    //O que significa operdores relacionais?
+    //significa que podemos usar um operador utilizaar valores atraves de um expressão
+    //Os operadores mais comuns
+    /*
+    Lista de operadores relacionais mais usados.
+    Igual a ==
+    Diferente de !=
+    Maior que >
+    Menor que <
+    Maior ou igual a >=
+    Menor ou igual a <=
+
+    Igual e do mesmo tipo que ===
+    Diferente e de outro tipo que !==
+    */
+
+    var n1 = 54, n2 = 78;
+    //(n1 é igual a n2) return é (false).
+    console.log(n1 == n2);
+    //(n1 é diferente n2) return é (true).
+    console.log(n1 != n2);
+    //(n1 é maior que n2) return é (false).
+    console.log(n1 > n2);
+    //(n1 é menor que n2) return é (true)
+    console.log(n1 < n2);
+    //(n1 maior igual á n2) return é (false).
+    console.log(n1 >= n2);
+    //(n1 menor igual á n2) return é (true).
+    console.log(n1 <= n2);
+    //(n1 é identico entre tipo e valor á n2) return é (false).
+    console.log(n1 === n2);
+    //(n1 é diferente entre (tipo e valor) á n2) return é (true).
+    console.log(n1 !== n2);
+
+    //Usamos os operdore em uma expressão e depois execultando algo no if por exemplo
+    //Se (n1 for maior que n2) ele fará algo Senão fará outra coisa
+    //Lembrando que isto são expressões (n1 > n2) que depois de avaliadas retornam (true ou false)
+    if (n1 > n2){ 
+       console.log('N1 é maior que N2');
+    }else{
+       console.log('N1 é menor que N2');
+    }
+
+
+  </script>
+</body>
+</html>

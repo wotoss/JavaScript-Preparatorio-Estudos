@@ -1,0 +1,125 @@
+<!DoCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-04</title>
+</head>
+<body>
+<div>
+  <Center>
+  <h1>woto-informática</h1>
+  <h2>Calculos Matemáticos</h2>
+  </Center>
+</div>
+
+
+  <style>
+    body{
+      background: blue;
+      color: white;
+      margin-top: 100px;
+    }
+  </style>
+  <script>
+    var numero1 = 42;
+    var numero2 = 19;
+
+    //vamos fazer a soma
+    var resposta = numero1 + numero2;
+    //console.log("O total é: " + resposta);
+    //Se eu quero que apareça na tela posso colocar no alert
+    alert("O total e: " + resposta);
+
+    //mudando a sintaxe 
+    var numero1 = 42, numero2 = 19;
+
+    var total = numero1 + numero2;
+
+    console.log("valor no console: " + total);
+
+    //Detalhe posso tambem colocar outro tipo de variavel
+    var numero1 = 42, numero2 = 19; nome = 'woto';
+
+    console.log("pode haver vários tipos de variaveis no mesmo (var): aqui esta meu nome " + nome);
+
+    console.log(numero1, numero2, nome);
+
+    //CUIDADE! Cartão Amarelo
+    var num1 = "10"; //string 
+    var num2 = 1; //inteiro ou int 
+    var soma  = num1 + num2; //ele não consegue somar (string com int)
+
+    console.log("O valor da soma é:" + soma);
+
+    //fazendo a con versão ou limpando a string
+    //para conseguir fazer calculos, temos que ter operações numéricas.
+    //conseguimos fazer com numeros inteiros ou reais como um float
+    console.log("=================================================");
+    var num3 = parseInt("10");
+    var num4 = 1;
+    soma2 = num3 + num4;
+    console.log("O valor da soma é=> " + soma2);
+    console.log("=================================================");
+    //Vamos fazer a subtração.
+    var num5 = 10, num6 = 3;
+    var totalSubtracao = num5 - num6;
+    console.log("A subtrtação é: " + totalSubtracao);
+    console.log("=================================================");
+    //Multiplicação
+    console.log("===========Multiplicação Mudando a sintaxe=======");
+    var num7 = 10;
+    var num8 = 3;
+    var totalMultiplicacao = num7 * num8;
+    console.log(`O valor da multiplicação é: ${totalMultiplicacao}`);
+    console.log("=================================================");
+    
+    console.log("===================Divisão=========================");
+    //Divisão
+    var num9 = num7 / 2;
+    console.log(`A divisão dos numeros é: ${num9}`);
+    console.log("=================================================");
+
+    //Modulo "calcula o resto da divisão"
+    console.log("=============Modulo resto da divisão=============");
+    var num10 = 10;
+    var num11= 2;
+    var restoDivisao = 10 % 3;
+    console.log("O resto da divisão é: " + restoDivisao);
+    //resto da divisão...
+    //tambem usamos para saber se o numero é par ou impar...
+
+    //incremento/decremento
+    num12 = 20;
+    //var incremento = num12 + 8;
+    //mudando a sintaxe:
+    //será adicionado + 8;
+    //Pronto sintaxe diferente
+    //var incremento  = num12 += 8;
+    //console.log("O incremento do numero é: " + incremento);
+
+    //mudando a sintaxe 
+    //O numero num2, vai receber o num2 + 10
+    num12 += 10;
+    console.log("O numero num2, vai receber o num2 + 10 o resultado é: " + num12);
+
+    //A mesma coisa posso fazer para (-= subtração, *= multiplicação, /= divisão)
+    var num13 = 30;
+    num13 *= 3;
+
+    console.log(`A multiplicação deste 30 * 3 nesta sintaxe é: ${num13}`);
+    console.log("======================================================");
+    console.log("==============Incrementando e Decrementando===========");
+    var num15 = 15;
+    console.log(num15++); //primeiro imprimi a variavel e depois incrementa (imprimi 15 e depois incrementa+1 16).
+    console.log(num15--); //primeiro imprimi a variável e depois decrementa. (imprimi 16 e depois decrementa-1 15 )
+    console.log(++num15); //primeiro incrementa e depois imprimi a variavel. (incrementa+1 16 e depois imprimi)
+    console.log(--num15); //primeiro decrementa e depois imprimi a variavel. (decrementa-1 15 e depois imprimi)
+    console.log("======================================================");
+
+  </script>
+  
+</body>
+</html>

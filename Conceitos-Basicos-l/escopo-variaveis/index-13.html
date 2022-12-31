@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento-13</title>
+</head>
+<body>
+  <h1>Escopo de variaveis</h1>
+
+  <script>
+     //escopo de variaveis
+
+     function somar(num1, num2) {
+      //está é uma variavel local só é reconhecida dentro do bloco da função.
+        var valor = 5;
+        return valor + num1 + num2;
+     }
+
+     debugger
+     for (var i = 0; i < 5; i++){
+      //Dica !!!
+      //Se declararmos uma variavel dentro de um 
+      //(bloco for, dentro de um bloco if ou fora desta estrutura) esta variavel é 
+      //uma variavel global...
+      //Detalhe se tiver dentro de uma (function ()) esta variavel passa a ser local.
+          var outra = 5;
+          console.log("o valor do for é: " + i * outra);
+     }
+     
+     console.log(somar(4, 6));
+  </script>
+</body>
+</html>

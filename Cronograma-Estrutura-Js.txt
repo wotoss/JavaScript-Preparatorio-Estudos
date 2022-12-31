@@ -1,0 +1,102 @@
+
+Montando a estrutura de aulas:
+
+Assuntos !!!
+
+1º conteudo.
+=> var, let, const;
+
+2º estrutura condicional 
+=> if, else e switch case.
+
+3º Calculos Matematicos
+=> sintaxe de varias formas (concatenada e interpolachions)
+=> operadores (+-*/ (% modulo ou resto))
+
+Operadores Aritméticos abreviados
+"sintaxe += soma, *= multiplicação, /= divisão, -= subtração"
+=> usando variaveis em linhas separadas e nas mesma linha.
+
+4º Estrutura de Repetição
+Falamos sobre:
+for 
+while => "inclusive encadeado".
+do-while
+** foreach "não falamos"
+
+5º Operadores Logícos
+AND = (&& comercial) = retorno (true);
+Or = (OU || paipe) = return "pelo menos uma das expresões ou todas tem que ser" (true)
+NOT = (!= não) = A comparação deve ser diferente e não igual.
+
+6º Operadores Relacionais
+    Lista de operadores relacionais mais usados.
+    Igual a ==
+    Diferente de !=
+    Maior que >
+    Menor que <
+    Maior ou igual a >=
+    Menor ou igual a <=
+
+    Igual e do mesmo tipo que ===
+    Diferente e de outro tipo que !==
+
+7º Operadores Aritméticos
+Curiosidade sobre calculos da linguagem JavaScript.
+Usamos a classe Math:
+
+Buscando o valor de PI
+Math.PI.toFixed(3));  
+
+Buscando a elevação quadrada (3 elevado ao quadrado 2)
+Math.pow(3, 2)
+
+Buscamos a raiz quadrada de 81.
+Math.sqrt(81)
+
+"entre outros desafios e curiosidades dos numeros em JavaScript".
+
+8º Escopo de Variavel.
+   Se declararmos uma variavel dentro de um 
+   (bloco for, dentro de um bloco if ou fora desta estrutura) esta variavel é 
+    uma variavel global...
+    Detalhe se tiver dentro de uma (function ()) esta variavel passa a ser local.
+
+    
+
+=> passando valores staticos e dinâmicos.
+
+Dicas em aula!
+Para ajudar o aluno tenha uma imagem do teclado.
+Falar sobre comentários de uma linha (//) e varias linhas (/**/).
+
+* Conteudo para o blog
+
+1 => Escopo de Variavel....
+Importante de (escopo e variavel).
+Se declararmos uma variavel dentro de um (bloco for, dentro de um bloco if ou fora desta estrutura) esta variavel é 
+uma variavel global...
+Detalhe se tiver dentro de uma (function ()) esta variavel passa a ser local.
+
+* inclusive o i nos temos acesso fora dor (for) pela variavel (i) ser global.
+for (var i = 0; i < 5; i++){
+    var outra = 5;
+    console.log("o valor do for é: " + i * outra);
+}
+
+Agora se declararmos mesmo dentro do (for ou if)  variavel como let 
+Ela sempre será local.
+
+A recomendação sempre que possivel é declar a variavel como (let ou local).
+
+* Debuggar 
+Você debuga para encontrar o erro e a logica.
+
+
+8 => Diferenças sobre filter e map.
+ Tanto o filter como o map gera um novo array
+ O map transforma os valores e gera um novo array, mas (sempre) com o mesmo tamanho do array original
+ Já o filter gera um novo array e possivelmente o array terá um menor tamanho que o array original.
+
+
+//Aula 37 aprendendo a utilizar reduce...
